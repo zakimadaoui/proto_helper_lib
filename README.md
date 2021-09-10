@@ -1,8 +1,8 @@
 # ProtoHelper library
 A helper library for **Proto+: the quick GUI creator for Embedded systems**
 
-[![GitHub version](https://img.shields.io/github/release/blynkkk/blynk-library.svg)](https://github.com/blynkkk/blynk-library/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/blynkkk/blynk-library/blob/master/LICENSE)
+[![GitHub version](https://img.shields.io/github/v/release/zakimadaoui/proto_helper_lib)](google.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](google.com)
 __________
 
 BANNER
