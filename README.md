@@ -20,7 +20,7 @@ DOWNLOAD APP HERE
 
 ## Installing in Arduino IDE
 
-You can download this repo as a `ZIP` file and import it into the IDE. You can check [this guide](https://www.arduino.cc/en/guide/libraries#toc4) on Importing a .zip Library in Arduino IDE.
+You can download this repo as a [`ZIP`](https://github.com/zakimadaoui/proto_helper_lib/archive/refs/heads/main.zip) file and import it into the IDE. You can check [this guide](https://www.arduino.cc/en/guide/libraries#toc4) on Importing a .zip Library in Arduino IDE.
  
 ## Usage
 
