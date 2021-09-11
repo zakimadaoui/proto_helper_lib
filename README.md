@@ -19,6 +19,13 @@ Proto+ can connect to your micro-controller or computer via Bluetooth, TCP/IP or
 [Donwload app from the Play Store](www.google.com)
 
 
+## Installing in Arduino IDE
+
+You can download this library as a [`ZIP`](https://github.com/zakimadaoui/proto_helper_lib/archive/refs/heads/main.zip) file and import it into the IDE. You can check [this guide](https://www.arduino.cc/en/guide/libraries#toc4) on Importing a .zip Library in Arduino IDE.
+
+
+**NB:** you can use this library with any other framework or micro-controller as long as the programming language used is C++.
+
 ## ProtoHelper Functionality
 
 * This library takes care of processing the commands recieved in the micro-controller side after a user interaction with the Graphical Interfaces created using the **Proto+** mobile app. 
@@ -52,11 +59,6 @@ However, if we want to have two JoySticks that send the same command, we want to
 \> `JOY`, `int(1)`, `float(X_val)`, `float(Y_val)`<  for Joystick 1  
 \> `JOY`, `int(2)`, `float(X_val)`, `float(Y_val)`<  for Joystick 2  
 
-
-
-## Installing in Arduino IDE
-
-You can download this repo as a [`ZIP`](https://github.com/zakimadaoui/proto_helper_lib/archive/refs/heads/main.zip) file and import it into the IDE. You can check [this guide](https://www.arduino.cc/en/guide/libraries#toc4) on Importing a .zip Library in Arduino IDE.
  
 ## Usage
 
@@ -68,10 +70,31 @@ First you need to include the header file of the library and get an instance of 
 ProtoHelper& pHelper = ProtoHelper::getInstance();
 ```
 
+In your setup function, you must set the callback function as follows:
 
 
-### Command structure
+```cpp
+void onReceive(Command* command){
+// your logic
+}
 
+void setup(){
+ pHelper.setOnCommandRecievedCallabck(onRecieve);
+}
+```
+
+The most important step is to feed the recieved data into the helper, which can be done as follows:
+
+```cpp
+void loop(){
+
+     //load all bytes from serial bus
+     while (Serial.available()) pHelper.loadByte(Serial.read());     
+     
+     //Or alternatively pass a buffer (Not recommended)
+     pHelper.loadByte(buffer, buffer_size)); // the buffer is a char[] or char*
+}
+```
 
 
 ### Best practice
