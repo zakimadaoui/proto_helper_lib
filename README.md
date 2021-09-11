@@ -109,7 +109,7 @@ char* commandName = command->getCommandName();
 //get commandName as a single charachter (BEST PRACTICE)
 char commandName  = command->getNameAsChar();
 
-// get your parameters and convert to the data type that you need
+// get your parameters and convert them to the data type that you need
 
 int   param0 = command->getParam(0)->getIntValue();;
 float param1 = command->getParam(1)->getFloatValue();;
@@ -123,7 +123,7 @@ char* param2 = command->getParam(2)->getStringValue();
 
 ## Examples
 
-you could also view the exmples from folder or using the IDE + youtube playlist
+You can find some examples on the examples folder or from the examples section in the arduino IDE, Also you should check [this Youtube Playlist](google.com) on how to create your first project with proto+.
 
 
 
