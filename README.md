@@ -96,6 +96,34 @@ void loop(){
 }
 ```
 
+### Command API
 
-### Best practice
+When the `onRecieve()` function is called you get a `Command*` that you can use to retrieve the command name and the parameters:
+
+```cpp
+void onReceive(Command* command){
+
+//get command same as a character sequence
+char* commandName = command->getCommandName();
+
+//get commandName as a single charachter (BEST PRACTICE)
+char commandName  = command->getNameAsChar();
+
+// get your parameters and convert to the data type that you need
+
+int   param0 = command->getParam(0)->getIntValue();;
+float param1 = command->getParam(1)->getFloatValue();;
+char* param2 = command->getParam(2)->getStringValue();
+
+// your logic ...
+
+}
+```
+
+
+## Examples
+
+you could also view the exmples from folder or using the IDE + youtube playlist
+
+
 
