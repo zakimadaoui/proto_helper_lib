@@ -16,7 +16,7 @@ the micro-controller.
 Proto+ can connect to your micro-controller or computer via Bluetooth, TCP/IP or even via UART, and on top of that, the C++ **HelperLibrary** will take care of parsing the recieved commands, generating events when commands are fully recieved and encapsulated the data in objects to keep your code clean and organized.
 
 
-[Donwload app from the Play Store](www.google.com)
+[Donwload app from the Play Store (BETA COMING SOON)](www.google.com)
 
 
 ## Installing in Arduino IDE
@@ -123,7 +123,7 @@ char* param2 = command->getParam(2)->getStringValue();
 
 ## Examples
 
-You can find some examples on the examples folder or from the examples section in the arduino IDE, Also you should check [this Youtube Playlist](google.com) on how to create your first project with proto+.
+You can find some examples on the examples folder or from the examples section in the arduino IDE, Also you should check [this Youtube Playlist(COMING SOON)](google.com) on how to create your first project with proto+.
 
 
 
