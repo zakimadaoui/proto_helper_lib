@@ -43,7 +43,7 @@ A command in **Proto+** is structured in the following manner:
 
 * **Parameters:** generally hold the data generated at user interaction. For instance, if a user moves a Slider to the right then one of the parameters of the command that gets generated will varry as the user continues sliding to the right.
 
-What makes **Proto+** very powerfull is that the user can create his own custom commands which contain all the flags that a suitable commandName. Then *Link* those commands to the preferred Widgets/Components. 
+What makes **Proto+** very powerfull is that the user can create his own custom commands which contain all the flags that he needs and pick a suitable commandName. Then *Link* those commands to the preferred Widgets/Components. 
 
 To allow this customizibility, a `Parameter` can be either a:
 
