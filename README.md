@@ -16,7 +16,7 @@ the micro-controller.
 Proto+ can connect to your micro-controller or computer via Bluetooth, TCP/IP or even via UART, and on top of that, the C++ **HelperLibrary** will take care of parsing the recieved commands, generating events when commands are fully recieved and encapsulated the data in objects to keep your code clean and organized.
 
 
-[Donwload app from the Play Store](www.google.com)
+[Donwload app from the Play Store](https://play.google.com/store/apps/details?id=com.zmdev.protoplus)
 
 
 ## Installing in Arduino IDE
@@ -43,7 +43,7 @@ A command in **Proto+** is structured in the following manner:
 
 * **Parameters:** generally hold the data generated at user interaction. For instance, if a user moves a Slider to the right then one of the parameters of the command that gets generated will varry as the user continues sliding to the right.
 
-What makes **Proto+** very powerfull is that the user can create his own custom commands which contain all the flags that a suitable commandName. Then *Link* those commands to the preferred Widgets/Components. 
+What makes **Proto+** very powerfull is that the user can create his own custom commands which contain all the flags that he needs and pick a suitable commandName. Then *Link* those commands to the preferred Widgets/Components. 
 
 To allow this customizibility, a `Parameter` can be either a:
 
@@ -123,7 +123,7 @@ char* param2 = command->getParam(2)->getStringValue();
 
 ## Examples
 
-You can find some examples on the examples folder or from the examples section in the arduino IDE, Also you should check [this Youtube Playlist](google.com) on how to create your first project with proto+.
+You can find some examples on the examples folder or from the examples section in the arduino IDE, Also you should check [this Youtube Playlist(COMING SOON)](google.com) on how to create your first project with proto+.
 
 
 
