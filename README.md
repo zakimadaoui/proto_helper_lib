@@ -13,7 +13,7 @@ The GUIs can be created quickly using drag and drop widgets like: Buttons, Slide
 it is in terms of the physical properties such as the size, color and orientations, but also in terms of the commands that will be sent to
 the micro-controller. 
 
-Proto+ can connect to your micro-controller or computer via Bluetooth, TCP/IP or even via UART, and on top of that, the C++ **HelperLibrary** will take care of parsing the recieved commands, generating events when commands are fully recieved and encapsulated the data in objects to keep your code clean and organized.
+Proto+ can connect to your micro-controller or computer via Bluetooth, TCP/IP or even via UART, and on top of that, the C++ **HelperLibrary** will take care of parsing the recieved commands, generating events when commands are fully recieved and converted into objects, to keep your code clean and organized.
 
 
 [Donwload app from the Play Store](https://play.google.com/store/apps/details?id=com.zmdev.protoplus)
